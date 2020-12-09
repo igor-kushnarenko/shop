@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block title %}
-<title>Главная страница</title>
+<title>Little babyki</title>
 {% endblock title %}
 
 {% block content %}
@@ -194,7 +194,7 @@
 							<li><a href="#" class="fa fa-google-plus"></a></li>
 						</ul>
 					</div>
-					<h3 class="wow fadeInDown delay-09s">Skyler white</h3>
+					<h3 class="wow fadeInDown delay-09s">Кушнаренко Лена</h3>
 					<span class="wow fadeInDown delay-09s">Accountant</span>
 					<p class="wow fadeInDown delay-09s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. Dolor sit amet, consectetur adipiscing elit proin consequat.</p>
 				</div>
@@ -286,97 +286,5 @@
 			</div>
 		</div>
 	</footer>
-
-
-	<script type="text/javascript">
-		$(document).ready(function(e) {
-
-			$('#test').scrollToFixed();
-			$('.res-nav_click').click(function() {
-				$('.main-nav').slideToggle();
-				return false
-
-			});
-
-      $('.Portfolio-box').magnificPopup({
-        delegate: 'a',
-        type: 'image'
-      });
-
-		});
-	</script>
-	<script>
-		wow = new WOW({
-			animateClass: 'animated',
-			offset: 100
-		});
-		wow.init();
-	</script>
-	<script type="text/javascript">
-		$(window).load(function() {
-
-			$('.main-nav li a, .servicelink').bind('click', function(event) {
-				var $anchor = $(this);
-
-				$('html, body').stop().animate({
-					scrollTop: $($anchor.attr('href')).offset().top - 102
-				}, 1500, 'easeInOutExpo');
-				/*
-				if you don't want to use the easing effects:
-				$('html, body').stop().animate({
-					scrollTop: $($anchor.attr('href')).offset().top
-				}, 1000);
-				*/
-				if ($(window).width() < 768) {
-					$('.main-nav').hide();
-				}
-				event.preventDefault();
-			});
-		})
-	</script>
-	<script type="text/javascript">
-		$(window).load(function() {
-
-
-			var $container = $('.portfolioContainer'),
-				$body = $('body'),
-				colW = 375,
-				columns = null;
-
-
-			$container.isotope({
-				// disable window resizing
-				resizable: true,
-				masonry: {
-					columnWidth: colW
-				}
-			});
-
-			$(window).smartresize(function() {
-				// check if columns has changed
-				var currentColumns = Math.floor(($body.width() - 30) / colW);
-				if (currentColumns !== columns) {
-					// set new column count
-					columns = currentColumns;
-					// apply width to container manually, then trigger relayout
-					$container.width(columns * colW)
-						.isotope('reLayout');
-				}
-
-			}).smartresize(); // trigger resize to set container width
-			$('.portfolioFilter a').click(function() {
-				$('.portfolioFilter .current').removeClass('current');
-				$(this).addClass('current');
-
-				var selector = $(this).attr('data-filter');
-				$container.isotope({
-
-					filter: selector,
-				});
-				return false;
-			});
-
-		});
-	</script>
 
 {% endblock content %}
