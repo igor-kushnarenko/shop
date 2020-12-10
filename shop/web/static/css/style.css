@@ -41,6 +41,15 @@
 
 img{ max-width:100%;}
 
+.col-lg-8{
+    width: 35%;
+}
+
+.col-lg-5{
+    width: 31%;
+}
+
+
 a, a:hover, a:active{ outline:0px !important}
 
 @font-face {
@@ -97,8 +106,9 @@ p{
 
 .header{
 	text-align:center;
-	background:url('../img/logo-triangle.jpg') left top repeat;
-	padding:280px 0;
+	background:url('../img/logo-triangle1.jpg') left top repeat;
+	padding:100px 0;
+	box-shadow: 5px 5px 10px #000000
 }
 .logo{
 	width:130px;
@@ -243,6 +253,12 @@ color: #fff;
 .main-section.alabaster{
 	background:#fafafa;
 }
+
+
+/* Carousel
+---------------------------------*/
+
+
 
 /* Featured Work
 ---------------------------------*/
