@@ -1,4 +1,5 @@
 from pathlib import Path
+import os
 BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '0b2nr%gtjxebckb5h!jxw9!(rak93yu1v%v40)rsrm^lu7nfio'
 DEBUG = True
@@ -81,3 +82,5 @@ USE_L10N = True
 USE_TZ = True
 
 STATIC_URL = '/static/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'pictures')
+MEDIA_URL = '/pictures/'
