@@ -12,6 +12,7 @@ class Products(models.Model):
 	SUIT = 'Костюмчики'
 	PANTS = 'Штанишки'
 	SHORTS = 'Шортики'
+	FAMILY_SET = 'Family Set'
 	MALE = 'Мужской'
 	FEMALE = 'Женский'
 	UNISEX = 'Унисекс'
@@ -23,6 +24,7 @@ class Products(models.Model):
 		(SUIT, 'Костюмчики'),
 		(PANTS, 'Штанишки'),
 		(SHORTS, 'Шортики'),
+		(FAMILY_SET, 'Family set')
 	}
 
 	SEX = {
@@ -46,8 +48,7 @@ class Products(models.Model):
 	group = models.CharField('Тип', max_length=20, choices=TYPES, default=SHIRT)
 	sex = models.CharField('Пол', max_length=10, choices=SEX)
 	size = models.CharField('Размер', max_length=10, choices=SIZE, default='None')
-	img = models.ImageField('Изображение', default='no_image.jpg', upload_to='product_image')
-	# date = models.DateField(("Date"), default=datetime.date.today)
+	img = models.ImageField('Изображение', default='no_image.jpg', upload_to='product_image', null=True, blank=True, editable=True)
 
 
 	def __str__(self):
