@@ -10,13 +10,17 @@
     <!--main-section-start-->
     <div class="container">
         <h2>Магазин</h2>
-        <h6>Fresh portfolio of designs that will keep you wanting more.</h6>
+        <h6>Хиты продаж.</h6>
         <div class="portfolioFilter">
             <ul class="Portfolio-nav wow fadeIn delay-02s">
                 <li><a href="#" data-filter="*" class="current">All</a></li>
 
                 <li><a href="#" data-filter=".sweatshirt">Свитшоты</a></li>
+                <li><a href="#" data-filter=".shirt">Футболки</a></li>
+                <li><a href="#" data-filter=".cap">Шапочки</a></li>
+                <li><a href="#" data-filter=".suit">Костюмчики</a></li>
                 <li><a href="#" data-filter=".pants">Штанишки</a></li>
+                <li><a href="#" data-filter=".shorts">Шортики</a></li>
                 <li><a href="#" data-filter=".family_set">Family Set</a></li>
 
             </ul>
@@ -26,11 +30,51 @@
     <div class="portfolioContainer wow fadeInUp delay-04s">
 
         {% for post in products %}
-        <div class=" Portfolio-box sweatshirt">
-            <a href="img/Portfolio-pic6.jpg"><img src="{{ post.img.url }}" alt=""></a>
-            <h3>{{ post.name }}</h3>
-            <p>{{ post.price }}</p>
-        </div>
+            {% if post.avaliability %}
+                {% if post.group == 'Свитшоты' %}
+                <div class=" Portfolio-box sweatshirt">
+                    <a href=""><img src="{{ post.img.url }}" alt=""></a>
+                    <h3>{{ post.name }}</h3>
+                    <p>{{ post.price }}</p>
+                </div>
+                {% elif post.group == 'Футболки' %}
+                <div class=" Portfolio-box shirt">
+                    <a href=""><img src="{{ post.img.url }}" alt=""></a>
+                    <h3>{{ post.name }}</h3>
+                    <p>{{ post.price }}</p>
+                </div>
+                {% elif post.group == 'Шапочки' %}
+                <div class=" Portfolio-box cap">
+                    <a href=""><img src="{{ post.img.url }}" alt=""></a>
+                    <h3>{{ post.name }}</h3>
+                    <p>{{ post.price }}</p>
+                </div>
+                {% elif post.group == 'Костюмчики' %}
+                <div class=" Portfolio-box suit">
+                    <a href=""><img src="{{ post.img.url }}" alt=""></a>
+                    <h3>{{ post.name }}</h3>
+                    <p>{{ post.price }}</p>
+                </div>
+                {% elif post.group == 'Штанишки' %}
+                <div class=" Portfolio-box pants">
+                    <a href=""><img src="{{ post.img.url }}" alt=""></a>
+                    <h3>{{ post.name }}</h3>
+                    <p>{{ post.price }}</p>
+                </div>
+                {% elif post.group == 'Шортики' %}
+                <div class=" Portfolio-box shorts">
+                    <a href=""><img src="{{ post.img.url }}" alt=""></a>
+                    <h3>{{ post.name }}</h3>
+                    <p>{{ post.price }}</p>
+                </div>
+                {% elif post.group == 'Family Set' %}
+                <div class=" Portfolio-box family_set">
+                    <a href=""><img src="{{ post.img.url }}" alt=""></a>
+                    <h3>{{ post.name }}</h3>
+                    <p>{{ post.price }}</p>
+                </div>
+                {% endif %}
+            {% endif %}
         {% endfor %}
 
 <!--         <div class=" Portfolio-box photography">
