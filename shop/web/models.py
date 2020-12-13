@@ -11,8 +11,7 @@ class Products(models.Model):
 	CAP = 'Шапочки'
 	SUIT = 'Костюмчики'
 	PANTS = 'Штанишки'
-	SHORTS = 'Шортики'
-	FAMILY_SET = 'Family Set'
+	ACCESS = 'Аксессуары'
 	MALE = 'Мужской'
 	FEMALE = 'Женский'
 	UNISEX = 'Унисекс'
@@ -23,8 +22,7 @@ class Products(models.Model):
 		(CAP, 'Шапочки'),
 		(SUIT, 'Костюмчики'),
 		(PANTS, 'Штанишки'),
-		(SHORTS, 'Шортики'),
-		(FAMILY_SET, 'Family set')
+		(ACCESS, 'Аксессуары')
 	}
 
 	SEX = {
