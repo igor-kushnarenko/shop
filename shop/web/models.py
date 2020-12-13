@@ -8,9 +8,10 @@ import datetime
 class Products(models.Model):
 	SWEATSHIRT = 'Свитшоты'
 	SHIRT = 'Футболки'
-	CAP = 'Шапочки'
-	SUIT = 'Костюмчики'
-	PANTS = 'Штанишки'
+	CAP = 'Шапки'
+	SUIT = 'Костюмы'
+	PANTS = 'Брюки'
+	SKIRTS = 'Юбки'
 	ACCESS = 'Аксессуары'
 	MALE = 'Мужской'
 	FEMALE = 'Женский'
@@ -19,9 +20,10 @@ class Products(models.Model):
 	TYPES = {
 		(SWEATSHIRT, 'Свитшоты'),
 		(SHIRT, 'Футболки'),
-		(CAP, 'Шапочки'),
-		(SUIT, 'Костюмчики'),
-		(PANTS, 'Штанишки'),
+		(CAP, 'Шапки'),
+		(SUIT, 'Костюмы'),
+		(PANTS, 'Брюки'),
+		(SKIRTS, 'Юбки'),
 		(ACCESS, 'Аксессуары')
 	}
 

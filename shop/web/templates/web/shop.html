@@ -15,13 +15,14 @@
         <h6>Хиты продаж.</h6>
         <div class="portfolioFilter">
             <ul class="Portfolio-nav wow fadeIn delay-02s">
-                <li><a href="#" data-filter="*" class="current">All</a></li>
+                <li><a href="#" data-filter="*" class="current">Всё</a></li>
 
                 <li><a href="#" data-filter=".sweatshirt">Свитшоты</a></li>
                 <li><a href="#" data-filter=".shirt">Футболки</a></li>
-                <li><a href="#" data-filter=".cap">Шапочки</a></li>
-                <li><a href="#" data-filter=".suit">Костюмчики</a></li>
-                <li><a href="#" data-filter=".pants">Штанишки</a></li>
+                <li><a href="#" data-filter=".cap">Шапки</a></li>
+                <li><a href="#" data-filter=".suit">Костюмы</a></li>
+                <li><a href="#" data-filter=".pants">Брюки</a></li>
+                <li><a href="#" data-filter=".skirts">Юбки</a></li>
                 <li><a href="#" data-filter=".access">Аксессуары</a></li>
 
             </ul>
@@ -46,22 +47,29 @@
                     <p>{{ post.description }}</p>
                     <p>Цена: {{ post.price }}₽</p>
                 </div>
-                {% elif post.group == 'Шапочки' %}
+                {% elif post.group == 'Шапки' %}
                 <div class=" Portfolio-box cap">
                     <a href=""><img src="{{ post.img.url }}" alt=""></a>
                     <h3>{{ post.name }}</h3>
                     <p>{{ post.description }}</p>
                     <p>Цена: {{ post.price }}₽</p>
                 </div>
-                {% elif post.group == 'Костюмчики' %}
+                {% elif post.group == 'Костюмы' %}
                 <div class=" Portfolio-box suit">
                     <a href=""><img src="{{ post.img.url }}" alt=""></a>
                     <h3>{{ post.name }}</h3>
                     <p>{{ post.description }}</p>
                     <p>Цена: {{ post.price }}₽</p>
                 </div>
-                {% elif post.group == 'Штанишки' %}
+                {% elif post.group == 'Брюки' %}
                 <div class=" Portfolio-box pants">
+                    <a href=""><img src="{{ post.img.url }}" alt=""></a>
+                    <h3>{{ post.name }}</h3>
+                    <p>{{ post.description }}</p>
+                    <p>Цена: {{ post.price }}₽</p>
+                </div>
+                {% elif post.group == 'Юбки' %}
+                <div class=" Portfolio-box skirts">
                     <a href=""><img src="{{ post.img.url }}" alt=""></a>
                     <h3>{{ post.name }}</h3>
                     <p>{{ post.description }}</p>

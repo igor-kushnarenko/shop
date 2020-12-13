@@ -42,7 +42,7 @@
 img{ max-width:100%;}
 
 .col-lg-8{
-    width: 35%;
+    width: 50%;
 }
 
 .col-lg-5{
@@ -76,7 +76,7 @@ h2{
 	font-family: 'Montserrat', sans-serif;
 	font-weight:700;
 	letter-spacing: -1px;
-	margin:0 0 15px 0;
+	margin:15px 0 15px 0;
 	text-align:center;
 	text-transform:uppercase;
 }
@@ -108,7 +108,7 @@ p{
 	text-align:center;
 	background:url('../img/logo-triangle1.jpg') left top repeat;
 	padding:100px 0;
-	box-shadow: 5px 5px 10px #000000
+/*	box-shadow: 5px 5px 10px #000000*/
 }
 .logo{
 	width:130px;
@@ -134,7 +134,7 @@ p{
 	display:inline-block;
 	font-family: 'Montserrat',sans-serif;
 	font-size:14px;
-	color: #bcbcbc;
+	color: #fff;
 	text-transform: uppercase;
 	font-weight: 400;
 	margin:0 5px 0 0;
@@ -158,7 +158,7 @@ color: #fff;
 	background:#7cc576;
 	color:#fff !important;
 	font-size:16px;
-	font-weight:400;
+	font-weight:700;
 	font-family: 'Montserrat', sans-serif;
 	display:inline-block;
 	border-radius:3px;
@@ -187,7 +187,10 @@ color: #fff;
 	padding:0px;
 	border-bottom:1px solid #dddddd;
 	box-shadow:0 4px 5px -3px #ececec;
-	position:relative;
+	position:absolute;
+	/*right: 3px;*/
+	width: 1920px;
+
 	background:#fff;
 }
 .main-nav{
@@ -204,6 +207,7 @@ color: #fff;
 	display:inline-block;
 	color:#222222;
 	text-transform:uppercase;
+	font-size: 20px;
 	font-family: 'Montserrat', sans-serif;
 	text-decoration: none;
 	line-height:20px;
@@ -506,103 +510,7 @@ border: 2px solid #fff;
 }
 
 
-/* Team
----------------------------------*/
-.team-leader-block{
-	max-width:993px;
-	margin:0 auto;
-}
-.team-leader-box{
-	width:30.66%;
-	margin-right: 3.82979%;
-	height: 490px;
-	overflow: hidden;
-	text-align: center;
-	float: left;
-}
-.team-leader-box span{
-	margin-bottom:24px;
-	display:block;
-}
-.team-leader-box:nth-of-type(3n+0){ margin:0;}
-.team-leader{
-	width:auto;
-	height:auto;
-	position:relative;
-	border-radius:50%;
-	box-shadow:0px 0px 0px 7px rgba(241,241,241,0.80);
-	margin:7px 7px 25px 7px;
-	
-}
-.team-leader-shadow{
-	transition:all 0.3s ease-in-out;
-	-moz-transition:all 0.3s ease-in-out;
-	-webkit-transition:all 0.3s ease-in-out;
-	border-radius:50%;
-	position:absolute;
-	width:100%;
-	height:100%;
-	z-index:10;
-	border-radius:50%;
-}
-.team-leader-shadow a{
-	display:block;
-	width:100%;
-	height:100%;
-}
-.team-leader:hover .team-leader-shadow{
-	box-shadow:inset  0px 0px 0px 148px rgba(17,17,17,0.80);
-}
-.team-leader:hover ul{ display:block; opacity:1}
-.team-leader img{
-	display:block;
-	border-radius:50%;
-}
-.team-leader ul{
-	display:block;
-	opacity:0;
-	padding:0;
-	margin:0;
-	list-style:none;
-	position:absolute;
-	left:0;
-	top:50%;
-	width:100%;
-	text-align:center;
-	margin-top:-14px;
-	z-index:15;
-	transition:all 0.6s ease-in-out;
-	-moz-transition:all 0.6s ease-in-out;
-	-webkit-transition:all 0.6s ease-in-out;
-}
-.team-leader ul li{
-	display:inline;
-	margin:0 11px;
-}
-.team-leader ul li a{
-	font-family: 'FontAwesome';
-	display:inline-block;
-	font-size:28px;
-	color:#fff;	
-	transition:all 0.3s ease-in-out;
-	-moz-transition:all 0.3s ease-in-out;
-	-webkit-transition:all 0.3s ease-in-out;
-}
-.team-leader ul li a:hover, .team-leader ul li a:focus{
-	text-decoration:none;
-}
-.team-leader ul li a.fa-twitter:hover{
-	color:#55acee;
-}
-.team-leader ul li a.fa-facebook:hover{
-	color:#3b5998;
-}
-.team-leader ul li a.fa-pinterest:hover{
-	color:#cb2026;
-}
-.team-leader ul li a.fa-google-plus:hover{
-	color:#dd4b39;
-}
+
 
 /* Talk Business
 ---------------------------------*/
@@ -740,7 +648,7 @@ border: 2px solid #fff;
 	font-size:14px;
 	text-transform:uppercase;
 	font-family: 'Montserrat', sans-serif;
-	font-weight:400;
+	font-weight:700;
 	border:0px;
 	transition:all 0.3s ease-in-out;
 	-moz-transition:all 0.3s ease-in-out;
@@ -766,7 +674,7 @@ border: 2px solid #fff;
     display:none;
     text-align:center;
     padding:15px;
-    font-weight:600;
+    font-weight:400;
     margin-bottom:15px;
 }
 
@@ -796,7 +704,7 @@ border: 2px solid #fff;
 	width: 76px;
 }
 .copyright, .credits{
-	color:#cccccc;
+	color:gray;
 	font-size:14px;
 	display:block;
 	text-align:center;
