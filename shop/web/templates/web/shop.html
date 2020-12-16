@@ -39,6 +39,7 @@
                     <h3>{{ post.name }}</h3>
                     <p>{{ post.description }}</p>
                     <p>Цена: {{ post.price }}₽</p>
+                    <a href="{% url 'product_views' post.id %}" class="btn btn-warning">Подробнее</a>
                 </div>
                 {% elif post.group == 'Футболки' %}
                 <div class=" Portfolio-box shirt">
@@ -46,6 +47,7 @@
                     <h3>{{ post.name }}</h3>
                     <p>{{ post.description }}</p>
                     <p>Цена: {{ post.price }}₽</p>
+                    <a href="{% url 'product_views' post.id %}" class="btn btn-warning">Подробнее</a>
                 </div>
                 {% elif post.group == 'Шапки' %}
                 <div class=" Portfolio-box cap">
@@ -53,6 +55,7 @@
                     <h3>{{ post.name }}</h3>
                     <p>{{ post.description }}</p>
                     <p>Цена: {{ post.price }}₽</p>
+                    <a href="{% url 'product_views' post.id %}" class="btn btn-warning">Подробнее</a>
                 </div>
                 {% elif post.group == 'Костюмы' %}
                 <div class=" Portfolio-box suit">
@@ -60,6 +63,7 @@
                     <h3>{{ post.name }}</h3>
                     <p>{{ post.description }}</p>
                     <p>Цена: {{ post.price }}₽</p>
+                    <a href="{% url 'product_views' post.id %}" class="btn btn-warning">Подробнее</a>
                 </div>
                 {% elif post.group == 'Брюки' %}
                 <div class=" Portfolio-box pants">
@@ -67,6 +71,7 @@
                     <h3>{{ post.name }}</h3>
                     <p>{{ post.description }}</p>
                     <p>Цена: {{ post.price }}₽</p>
+                    <a href="{% url 'product_views' post.id %}" class="btn btn-warning">Подробнее</a>
                 </div>
                 {% elif post.group == 'Юбки' %}
                 <div class=" Portfolio-box skirts">
@@ -74,6 +79,7 @@
                     <h3>{{ post.name }}</h3>
                     <p>{{ post.description }}</p>
                     <p>Цена: {{ post.price }}₽</p>
+                    <a href="{% url 'product_views' post.id %}" class="btn btn-warning">Подробнее</a>
                 </div>
                 {% elif post.group == 'Аксессуары' %}
                 <div class=" Portfolio-box access">
@@ -81,6 +87,7 @@
                     <h3>{{ post.name }}</h3>
                     <p>{{ post.description }}</p>
                     <p>Цена: {{ post.price }}₽</p>
+                    <a href="{% url 'product_views' post.id %}" class="btn btn-warning">Подробнее</a>
                 </div>
                 {% endif %}
             {% endif %}
