@@ -1,5 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import Products
+from django.views.generic import DetailView
 
 
 def index(request):
@@ -12,3 +13,9 @@ def shop(request):
 		'products': products
 	}
 	return render(request, 'web/shop.html', data)
+
+
+class ProductViews(DetailView):
+	model = Products
+	template_name = 'web/product_view.html'
+	context_object_name = 'product'
