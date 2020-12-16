@@ -1,0 +1,14 @@
+{% extends 'web/main.html' %}
+
+{% block title %}{{ product.name }}{% endblock %}
+
+
+{% block content %}
+
+<div class="features">
+    <h1>{{ product.name }}</h1>
+    <p>{{ product.description }}</p>
+</div>
+
+
+{% endblock %}
