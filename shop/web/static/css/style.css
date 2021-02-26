@@ -1,4 +1,3 @@
-/*
     Theme Name: Knight
     Theme URL: https://bootstrapmade.com/knight-free-bootstrap-theme/
     Author: BootstrapMade
@@ -59,6 +58,16 @@ a, a:hover, a:active{ outline:0px !important}
   font-weight: normal;
   font-style: normal;
 }
+
+/*--------------------------------------------------------------
+# Disable AOS delay on mobile
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+
 
 /* Primary Styles
 ---------------------------------*/
@@ -185,11 +194,12 @@ color: #fff;
 /* Navigation
 ---------------------------------*/
 .main-nav-outer{
-	padding:0px;
+	padding:8px;
 	border-bottom:1px solid #dddddd;
 	box-shadow:0 4px 5px -3px #ececec;
-	position:absolute;
-	width: 1920px;
+	position:static;
+	width: 100%;
+	height: 110px;
 
 	background:#fff;
 }
@@ -218,12 +228,12 @@ color: #fff;
 	-webkit-transition:all 0.3s ease-in-out;
 }
 
-.main-nav li a:hover{ 
+.main-nav li a:hover{
 	text-decoration:none;
 	color: #7cc576;
 }
 
-.small-logo{ 
+.small-logo{
 	padding:0 32px;
 }
 
@@ -535,7 +545,7 @@ border: 2px solid #fff;
 /* Contact
 ---------------------------------*/
 .main-section.contact{
-	padding:90px 0 100px;
+	padding:50px 0 50px;
 }
 
 .main-section.contact{
@@ -543,6 +553,7 @@ border: 2px solid #fff;
 }
 .contact-info-box{
 	font-size:15px;
+	color:black;
 	margin:0 0 14px 68px;
 	padding-left:0;
 }
@@ -593,10 +604,10 @@ border: 2px solid #fff;
 .social-link li a:hover, .social-link li a:focus{
 	text-decoration:none;
 }
-.twitter a:hover {
-	background: #55acee;
+.instagram a:hover {
+	background: #ff0067;
 }
-.facebook a:hover {
+.vk a:hover {
 	background: #3b5998;
 }
 .pinterest a:hover {

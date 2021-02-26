@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block title %}
-<title>Магазин</title>
+<title>Little babyki - Магазин</title>
 {% endblock title %}
 
 {% block content %}
@@ -11,8 +11,8 @@
 
     <!--main-section-start-->
     <div class="container">
-        <h2>Магазин</h2>
-        <h6>Хиты продаж.</h6>
+        <h2>8-928-425-88-89</h2>
+        <h6>Хиты продаж</h6>
         <div class="portfolioFilter">
             <ul class="Portfolio-nav wow fadeIn delay-02s">
                 <li><a href="#" data-filter="*" class="current">Всё</a></li>
@@ -35,59 +35,59 @@
             {% if post.avaliability %}
                 {% if post.group == 'Свитшоты' %}
                 <div class=" Portfolio-box sweatshirt">
-                    <a href=""><img src="{{ post.img.url }}" alt=""></a>
+                    <a href="{{ post.img.url }}"><img src="{{ post.img.url }}" alt=""></a>
                     <h3>{{ post.name }}</h3>
                     <p>{{ post.description }}</p>
                     <p>Цена: {{ post.price }}₽</p>
-                    <a href="{% url 'product_views' post.id %}" class="btn btn-warning">Подробнее</a>
+<!--                    <a href="{% url 'product_views' post.id %}" class="btn btn-warning">Подробнее</a>-->
                 </div>
                 {% elif post.group == 'Футболки' %}
                 <div class=" Portfolio-box shirt">
-                    <a href=""><img src="{{ post.img.url }}" alt=""></a>
+                    <a href="{{ post.img.url }}"><img src="{{ post.img.url }}" alt=""></a>
                     <h3>{{ post.name }}</h3>
                     <p>{{ post.description }}</p>
                     <p>Цена: {{ post.price }}₽</p>
-                    <a href="{% url 'product_views' post.id %}" class="btn btn-warning">Подробнее</a>
+<!--                    <a href="{% url 'product_views' post.id %}" class="btn btn-warning">Подробнее</a>-->
                 </div>
                 {% elif post.group == 'Шапки' %}
                 <div class=" Portfolio-box cap">
-                    <a href=""><img src="{{ post.img.url }}" alt=""></a>
+                    <a href="{{ post.img.url }}"><img src="{{ post.img.url }}" alt=""></a>
                     <h3>{{ post.name }}</h3>
                     <p>{{ post.description }}</p>
                     <p>Цена: {{ post.price }}₽</p>
-                    <a href="{% url 'product_views' post.id %}" class="btn btn-warning">Подробнее</a>
+<!--                    <a href="{% url 'product_views' post.id %}" class="btn btn-warning">Подробнее</a>-->
                 </div>
                 {% elif post.group == 'Костюмы' %}
                 <div class=" Portfolio-box suit">
-                    <a href=""><img src="{{ post.img.url }}" alt=""></a>
+                    <a href="{{ post.img.url }}"><img src="{{ post.img.url }}" alt=""></a>
                     <h3>{{ post.name }}</h3>
                     <p>{{ post.description }}</p>
                     <p>Цена: {{ post.price }}₽</p>
-                    <a href="{% url 'product_views' post.id %}" class="btn btn-warning">Подробнее</a>
+<!--                    <a href="{% url 'product_views' post.id %}" class="btn btn-warning">Подробнее</a>-->
                 </div>
                 {% elif post.group == 'Брюки' %}
                 <div class=" Portfolio-box pants">
-                    <a href=""><img src="{{ post.img.url }}" alt=""></a>
+                    <a href="{{ post.img.url }}"><img src="{{ post.img.url }}" alt=""></a>
                     <h3>{{ post.name }}</h3>
                     <p>{{ post.description }}</p>
                     <p>Цена: {{ post.price }}₽</p>
-                    <a href="{% url 'product_views' post.id %}" class="btn btn-warning">Подробнее</a>
+<!--                    <a href="{% url 'product_views' post.id %}" class="btn btn-warning">Подробнее</a>-->
                 </div>
                 {% elif post.group == 'Юбки' %}
                 <div class=" Portfolio-box skirts">
-                    <a href=""><img src="{{ post.img.url }}" alt=""></a>
+                    <a href="{{ post.img.url }}"><img src="{{ post.img.url }}" alt=""></a>
                     <h3>{{ post.name }}</h3>
                     <p>{{ post.description }}</p>
                     <p>Цена: {{ post.price }}₽</p>
-                    <a href="{% url 'product_views' post.id %}" class="btn btn-warning">Подробнее</a>
+<!--                    <a href="{% url 'product_views' post.id %}" class="btn btn-warning">Подробнее</a>-->
                 </div>
                 {% elif post.group == 'Аксессуары' %}
                 <div class=" Portfolio-box access">
-                    <a href=""><img src="{{ post.img.url }}" alt=""></a>
+                    <a href="{{ post.img.url }}"><img src="{{ post.img.url }}" alt=""></a>
                     <h3>{{ post.name }}</h3>
                     <p>{{ post.description }}</p>
                     <p>Цена: {{ post.price }}₽</p>
-                    <a href="{% url 'product_views' post.id %}" class="btn btn-warning">Подробнее</a>
+<!--                    <a href="{% url 'product_views' post.id %}" class="btn btn-warning">Подробнее</a>-->
                 </div>
                 {% endif %}
             {% endif %}
