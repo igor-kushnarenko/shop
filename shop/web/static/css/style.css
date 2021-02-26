@@ -165,7 +165,7 @@ color: #fff;
 
 .link{
 	padding:15px 35px;
-	background:#ff00c9;
+	background:#b000df;
 	color:#fff !important;
 	font-size:16px;
 	font-weight:700;
@@ -371,7 +371,7 @@ color: #fff;
 	-webkit-transition:all 0.3s ease-in-out;
 }
 .Portfolio-nav li a:hover{
-	background:#7cc576;
+	background:#b000df;
 	color:#fff;
 	text-decoration:none;
 }
@@ -402,7 +402,7 @@ color: #fff;
 }
 
 .Portfolio-nav li a.current{
-	background:#7cc576;
+	background:#b000df;
 	color:#fff;
 	text-decoration:none;
 }
@@ -495,7 +495,7 @@ border: 2px solid #fff;
 }
 
 .c-logo-part{
-	background:#ff00c9;
+	background:#b000df;
 	padding:25px 0;
     filter: alpha(opacity=60);
 }
